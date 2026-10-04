@@ -27,8 +27,9 @@ void printLetters(int length) {
 
   std::vector<char> letters(length, 'A');
 	int column = length - 1;
+	long long lines = pow(26, length);
 
-  for (int i = 0; i < pow(26, length); i++) {
+  for (int i = 0; i < lines; i++) {
 
     for (int j = 0; j < length; j++) {
       std::cout << letters[j];
